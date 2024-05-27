@@ -10,8 +10,12 @@ int main () {
     const int NUMERO_SECRETO = 10;
 
     bool nao_acertou = true;
+    int tentativa = 0;
 
     while(nao_acertou) {
+        tentativa++;
+        cout << "TENTATIVA " << tentativa << endl;
+
         int chute;
         cout << "Qual é o seu chute?";
         cin >> chute;
@@ -33,5 +37,6 @@ int main () {
         }
     }
 
+    cout << "Você acertou na " << tentativa << " tentativa" << endl;
     cout << "FIM DE JOGO!" << endl;
 }
