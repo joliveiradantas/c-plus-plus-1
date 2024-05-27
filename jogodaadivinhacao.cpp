@@ -42,6 +42,10 @@ int main () {
     }
 
     cout << "Você acertou na " << tentativa << " tentativa" << endl;
+
+    cout.precision(2); //para que a precisão seja de 2 casas decimais
+    cout << fixed; //fixa a vírgula no lugar que queremos
+
     cout << "Sua pontuação é: " << pontos << endl;
     cout << "FIM DE JOGO!" << endl;
 }
